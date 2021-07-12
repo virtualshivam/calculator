@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-  <link rel="stylesheet" href="design/style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <main class="main">
-      <div class="nav-title">
-        <h1 class="logo">calc</h1>
-        <div class="toggle-menu">
-          <p>THEME</p>
-          
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="nav-title">
+          <h1 class="logo">calc</h1>
+          <div class="toggle-menu">
+            <p>THEME</p>
+            <div class="toggle">
+              <div>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <input
+                type="range"
+                name="theme-slider"
+                id="theme-slider"
+                min="0"
+                max="2"
+                value="0"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="result">
-        <h1 class="final-result">0</h1>
-      </div>
-      <div class="calc-parent">
-      <div class="calc-body">
-        <button class="btn num-btn">7</button>
-        <button class="btn num-btn">8</button>
-        <button class="btn num-btn">9</button>
-        <button class="btn" id="del">DEL</button>
-        <button class="btn num-btn">4</button>
-        <button class="btn num-btn">5</button>
-        <button class="btn num-btn">6</button>
-        <button class="btn btn-operator">+</button>
-        <button class="btn num-btn">1</button>
-        <button class="btn num-btn">2</button>
-        <button class="btn num-btn">3</button>
-        <button class="btn btn-operator">-</button>
-        <button class="btn num-btn">.</button>
-        <button class="btn num-btn">0</button>
-        <button class="btn btn-operator">/</button>
-        <button class="btn btn-operator">*</button>
-        <button class="btn" id="reset">RESET</button>
-        <button class="btn" id="ans">=</button>
-      </div>
+        <div class="result">
+          <h1 class="final-result">0</h1>
+        </div>
+        <div class="calc-parent">
+          <div class="calc-body">
+            <button class="btn num-btn">7</button>
+            <button class="btn num-btn">8</button>
+            <button class="btn num-btn">9</button>
+            <button class="btn" id="del">DEL</button>
+            <button class="btn num-btn">4</button>
+            <button class="btn num-btn">5</button>
+            <button class="btn num-btn">6</button>
+            <button class="btn btn-operator">+</button>
+            <button class="btn num-btn">1</button>
+            <button class="btn num-btn">2</button>
+            <button class="btn num-btn">3</button>
+            <button class="btn btn-operator">-</button>
+            <button class="btn num-btn">.</button>
+            <button class="btn num-btn">0</button>
+            <button class="btn btn-operator">/</button>
+            <button class="btn btn-operator">*</button>
+            <button class="btn" id="reset">RESET</button>
+            <button class="btn" id="ans">=</button>
+          </div>
+        </div>
+      </main>
     </div>
-    </main>
-  </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src="js/calculator.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/virtualshivam">Shivam Kumar Choudhary</a>.
+    </div>
+    <script src="js/calculator.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
